@@ -1,0 +1,17 @@
+Assumptions of the functionality that I made:
+- All test methods are void returns
+- Priorities can be set to BeforeEach and AfterEach methods
+- DataRow however cannot
+- If a test method takes in arguments it must have a valid DataRowAttribute
+
+Omitted methods:
+- Invalid return type
+- No attributes
+
+Omitted DataRowAttributes:
+- invalid argument list (mismatched against test method)
+
+Execution:
+- If an exception (other than AssertionException) is thrown during tests
+  the TestHanlder will throw it's custom exception TestHandlerException indicating that the
+  method being testet 
